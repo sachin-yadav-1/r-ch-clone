@@ -1,11 +1,12 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "./../";
 
 const Header = () => {
   const NAV_ITEMS = [
-    { id: 1, name: "Home" },
-    { id: 2, name: "About Us" },
-    { id: 3, name: "FAQs" },
+    { id: 1, name: "Home", to: "/" },
+    { id: 2, name: "About Us", to: "/about" },
+    { id: 3, name: "FAQs", to: "/faq" },
   ];
 
   return (
@@ -13,30 +14,28 @@ const Header = () => {
       <div className="container">
         <div className="navbar">
           <div className="navbar-brand">
-            <a href="/" className="navbar-brand__logo">
+            <Link to="/" className="navbar-brand__logo">
               <img src="/imgs/logo.webp" alt="Charitism Logo" />
-            </a>
-            <a href="/" className="navbar-brand__logo--text">
-              <p>Charitism</p>
-            </a>
+            </Link>
+            <Link to="/" className="navbar-brand__logo--text">
+              Charitism
+            </Link>
           </div>
 
           <div className="navbar-nav">
             <ul>
               {NAV_ITEMS.map((item) => (
                 <li key={item.id} className="navbar-nav__item">
-                  <a className="navbar-nav__link" href="/">
+                  <Link to={item.to} className="navbar-nav__link" href="/">
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="navbar-button">
-            <a href="/" className="btn btn-primary">
-              Gift Basket
-            </a>
+            <button className="button button--primary">Gift Basket</button>
           </div>
         </div>
       </div>

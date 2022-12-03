@@ -3,16 +3,20 @@ import "./Carousal.css";
 
 const Carousal = ({ images }) => {
   const [translateValue, setTranslateValue] = useState(0);
+  const totalImages = images?.length - 1;
 
   useEffect(() => {
-    const timerId = setInterval(() => setTranslateValue((prevVal) => (prevVal === 0 ? -100 : 0)), 3000);
+    const timerId = setInterval(() => {
+      setTranslateValue((prevVal) => (prevVal / totalImages !== 100 ? prevVal + 100 : 0));
+    }, 3000);
+
     return () => clearInterval(timerId);
-  }, [translateValue]);
+  }, [translateValue, totalImages]);
 
   return (
     <div className="container">
       <div className="carousal">
-        {images.length &&
+        {totalImages &&
           images.map((image) => {
             return (
               <img
@@ -22,7 +26,7 @@ const Carousal = ({ images }) => {
                   display: "block",
                   width: "100%",
                   borderRadius: "5px",
-                  transform: `translateX(${translateValue}%)`,
+                  transform: `translateX(${-translateValue}%)`,
                 }}
                 src={image.src}
                 alt={image.description}

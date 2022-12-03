@@ -54,6 +54,7 @@
 }
 .navbar-nav__link:hover {
   color: #fedd66;
+  cursor: pointer;
 }
 
 .navbar-button {

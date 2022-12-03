@@ -30,6 +30,7 @@ body {
   margin: 0 auto;
 }
 
+/* ANCHOR BUTTON */
 .btn {
   display: block;
   font-size: 1.6rem;
@@ -40,14 +41,32 @@ body {
   border-radius: 3px;
   transition: all 0.3s;
 }
-
 .btn:visited {
   color: #222;
 }
-
 .btn-primary {
   background-color: #fedd66;
 }
 .btn-primary:hover {
   filter: saturate(5);
+}
+
+/* BUTTON ELEMENT */
+.button {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  transition: all 0.3s;
+  outline: none;
+  border: none;
+}
+.button--primary {
+  background-color: #fedd66;
+}
+.button--primary:hover {
+  filter: saturate(5);
+  cursor: pointer;
 }
