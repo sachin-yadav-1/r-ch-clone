@@ -1,0 +1,62 @@
+.header {
+  padding: 1rem 0;
+  background-color: #EBFAFF;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.navbar-brand {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.navbar-brand__logo {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  width: 3rem;
+}
+.navbar-brand__logo img {
+  display: block;
+  width: 100%;
+}
+.navbar-brand__logo--text {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #222;
+}
+.navbar-brand__logo--text:visited {
+  color: #222;
+}
+
+.navbar-nav {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar-nav__link {
+  display: 'inline-block';
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #222;
+  transition: all .3s;
+}
+.navbar-nav__link:hover {
+  color: #FEDD66;
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+}

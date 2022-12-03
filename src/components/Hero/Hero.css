@@ -1,0 +1,27 @@
+.hero {
+  min-height: 70vh;
+  background-color: #EBFAFF;
+}
+
+.hero-content {
+  display: flex;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem
+}
+.text--bg {
+  font-family: 'Playfair Display';
+  font-size: 6rem;
+}
+.text--yellow {
+  color: #FEDD66;
+}
+
+.hero-img img {
+  display: block;
+  width: 100%;
+}
