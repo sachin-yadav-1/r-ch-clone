@@ -1,6 +1,6 @@
 .header {
   padding: 1rem 0;
-  background-color: #EBFAFF;
+  background-color: #ebfaff;
 }
 
 .navbar {
@@ -46,14 +46,14 @@
 }
 
 .navbar-nav__link {
-  display: 'inline-block';
+  display: "inline-block";
   text-decoration: none;
   font-size: 1.6rem;
   color: #222;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .navbar-nav__link:hover {
-  color: #FEDD66;
+  color: #fedd66;
 }
 
 .navbar-button {

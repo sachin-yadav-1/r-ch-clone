@@ -1,6 +1,6 @@
 .hero {
   min-height: 70vh;
-  background-color: #EBFAFF;
+  background-color: #ebfaff;
 }
 
 .hero-content {
@@ -11,14 +11,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem
+  gap: 1rem;
 }
 .text--bg {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 6rem;
 }
 .text--yellow {
-  color: #FEDD66;
+  color: #fedd66;
 }
 
 .hero-img img {

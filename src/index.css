@@ -1,4 +1,4 @@
-*, 
+*,
 *::after,
 *::before {
   margin: 0px;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.4;
   font-size: 1.6rem;
@@ -34,7 +34,7 @@ body {
   text-transform: capitalize;
   padding: 1rem 1.5rem;
   border-radius: 3px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .btn:visited {
@@ -42,8 +42,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #FEDD66;
+  background-color: #fedd66;
 }
 .btn-primary:hover {
-  filter:saturate(5);
+  filter: saturate(5);
 }
