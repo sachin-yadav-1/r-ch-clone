@@ -1,0 +1,10 @@
+.section__heading {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

@@ -3,5 +3,9 @@ import Hero from "./Hero/Hero";
 import Carousal from "./Carousal/Carousal";
 import Link from "./Link";
 import Route from "./Route";
+import CampaignCard from "./Campaigns/CampaignCard";
+import CampaignsList from "./Campaigns/CampaignsList";
+import SearchBar from "./SearchBar/SearchBar";
+import Progress from "./Progress/Progress";
 
-export { Header, Hero, Carousal, Link, Route };
+export { Header, Hero, Carousal, Link, Route, CampaignsList, CampaignCard, SearchBar, Progress };

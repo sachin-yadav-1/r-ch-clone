@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Hero, Carousal } from "../components";
+import { Header, Hero, Carousal, CampaignsList } from "../components";
 
 const carousalImages = [
   { id: 1, src: "/imgs/highlight-1.png", description: "Donate for homeless people" },
@@ -16,6 +16,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <Carousal images={carousalImages} />
+      <CampaignsList />
     </>
   );
 };

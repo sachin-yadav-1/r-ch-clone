@@ -1,0 +1,16 @@
+.progress-container {
+  width: 100%;
+  height: 1rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: #add6ff;
+}
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #1976D2;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}

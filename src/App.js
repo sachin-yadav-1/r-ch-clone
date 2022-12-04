@@ -1,5 +1,5 @@
 import React from "react";
-import { HomePage, AboutUsPage, FaqPage } from "./pages";
+import { HomePage, AboutUsPage, FaqPage, SearchPage } from "./pages";
 import { Route } from "./components";
 
 const App = () => {
@@ -13,6 +13,9 @@ const App = () => {
       </Route>
       <Route path="/faq">
         <FaqPage />
+      </Route>
+      <Route path="/search">
+        <SearchPage />
       </Route>
     </div>
   );
