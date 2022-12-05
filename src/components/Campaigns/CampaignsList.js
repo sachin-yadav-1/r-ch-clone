@@ -9,7 +9,7 @@ const CampaignsList = () => {
 
   useEffect(() => {
     fetchCampaigns();
-  }, []);
+  }, [fetchCampaigns]);
 
   const onSearchTermHandler = (term) => fetchCampaigns(term);
 
@@ -18,7 +18,7 @@ const CampaignsList = () => {
       <div className="container">
         <h2 className="section__heading">Featured Campaigns</h2>
         <div className="section__search">
-          <SearchBar onSearchTerm={onSearchTermHandler} />
+          <SearchBar onSearchTerm={onSearchTermHandler} placeholderText="Search campaigns by code..." />
         </div>
         <div className="card-container mb-m">
           {campaigns.map((camp) => (
