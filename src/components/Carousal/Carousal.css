@@ -1,16 +1,18 @@
 .carousal {
-  width: 70%;
-  margin: 0 auto;
   display: flex;
   overflow: hidden;
-  transform: translateY(-35%);
   background-color: transparent;
   border-radius: 5px;
-
 }
 
 .carousal img {
   display: block;
   width: 100%;
   border-radius: 5px;
+}
+
+.carousal__home {
+  width: 70%;
+  margin: 0 auto;
+  transform: translateY(-35%);
 }

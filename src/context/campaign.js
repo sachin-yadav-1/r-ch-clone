@@ -6,7 +6,7 @@ const CampaignContext = createContext();
 
 const CampaignProvider = React.memo(({ children }) => {
   const [campaigns, setCampaigns] = useState([]);
-  const [campaign, setCampaign] = useState({});
+  const [campaign, setCampaign] = useState(null);
 
   const fetchCampaigns = useCallback(async (code) => {
     const res = await axios.get(`https://api.charitism.com/campaigns/all${code ? `?code=${code}` : ""}`);
@@ -14,8 +14,10 @@ const CampaignProvider = React.memo(({ children }) => {
   }, []);
 
   const fetchOneCampaign = useCallback(async (code) => {
-    const res = await axios.get(`https://api.charitism.com/campaigns?code=${code}`);
-    setCampaign(res.data);
+    if (code) {
+      const res = await axios.get(`https://api.charitism.com/campaigns?code=${code}`);
+      setCampaign(res.data);
+    }
   }, []);
 
   return <CampaignContext.Provider value={{ campaigns, campaign, fetchCampaigns, fetchOneCampaign }}>{children}</CampaignContext.Provider>;

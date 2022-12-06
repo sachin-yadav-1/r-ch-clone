@@ -37,6 +37,9 @@ body {
 .section--grey {
   background-color: #faf9f6;
 }
+.section--gradient {
+  background: linear-gradient(to bottom, #ebfaff 0%, #fff 50%, #fff 100%);
+}
 
 .btn {
   display: block;
@@ -48,6 +51,7 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 3px;
   transition: all 0.3s;
+  color: #222;
 }
 .btn:visited {
   color: #222;
@@ -70,6 +74,10 @@ body {
   color: #4aa313;
 }
 
+.btn:hover, .button:hover {
+  cursor: pointer;
+} 
+
 .button {
   display: block;
   font-size: 1.6rem;
@@ -87,6 +95,17 @@ body {
 .button--primary:hover {
   filter: saturate(5);
   cursor: pointer;
+}
+.button--blue {
+  background-color: #3b61aa;
+  color: #fff
+}
+.button--green {
+  background-color: #8ed68e;
+}
+
+.btn--small {
+  font-size: 1.2rem;
 }
 
 .text--sm {
@@ -116,4 +135,10 @@ body {
 
 .mb-m {
   margin-bottom: 2rem;
+}
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-l {
+  margin-bottom: 4rem;
 }

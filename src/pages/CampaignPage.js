@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { CampaignDetails, Header } from "./../components";
+import { CampaignContext } from "../context";
 
 const CampaignPage = () => {
-  return <h1>CampaignPage</h1>;
+  const { fetchOneCampaign, campaign } = useContext(CampaignContext);
+  const code = window.location.pathname.split("/")[2];
+
+  useEffect(() => {
+    fetchOneCampaign(code);
+  }, [code, fetchOneCampaign]);
+
+  return (
+    <>
+      <Header />
+      {campaign?.code === code ? <CampaignDetails campaign={campaign} /> : null}
+    </>
+  );
 };
 
 export default CampaignPage;

@@ -10,6 +10,7 @@
   flex-direction: column;
 }
 .card:hover {
+  cursor: pointer;
   transform: translateY(-3px);
 }
 

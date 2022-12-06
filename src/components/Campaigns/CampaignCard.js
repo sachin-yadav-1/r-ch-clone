@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "./../";
 import "./CampaignCard.css";
 import { Progress } from "./../";
+import { NavigationContext } from "../../context";
 
 const CampaignCard = ({ campaign }) => {
+  const { navigate } = useContext(NavigationContext);
+
+  const onCardClickHandler = () => navigate(`/campaign/${campaign.code}`);
+
   return (
-    <div className="card">
+    <div className="card" onClick={onCardClickHandler}>
       <div className="card__image">
         <img src={campaign.image} alt="campaign" />
       </div>

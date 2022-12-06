@@ -7,5 +7,7 @@ import CampaignCard from "./Campaigns/CampaignCard";
 import CampaignsList from "./Campaigns/CampaignsList";
 import SearchBar from "./SearchBar/SearchBar";
 import Progress from "./Progress/Progress";
+import CampaignDetails from "./Campaigns/CampaignDetails";
+import Product from "./Campaigns/Product";
 
-export { Header, Hero, Carousal, Link, Route, CampaignsList, CampaignCard, SearchBar, Progress };
+export { Header, Hero, Carousal, Link, Route, CampaignsList, CampaignCard, SearchBar, Progress, CampaignDetails, Product };

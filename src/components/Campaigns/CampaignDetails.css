@@ -1,0 +1,31 @@
+.campaign-details {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-width: 60%;
+}
+
+.camapign-details__text {
+  width: 60%;
+}
+.camapign-details__text h1 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+}
+.camapign-details__text p {
+  color: #444;
+  font-family: "Montserrat";
+}
+.campaign-details__products {
+  width: 35%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.product-list__header {
+  padding: 1rem;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  background-color: #3b61aa;
+  margin-bottom: 1rem;
+}
