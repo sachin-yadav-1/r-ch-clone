@@ -9,7 +9,8 @@ const Product = ({ product }) => {
   const [addedToBasket, setAddedToBasket] = useState(false);
 
   const onCountChangeHandler = (e) => {
-    const selectedCount = e.target.value;
+    let selectedCount = +e.target.value;
+    if (selectedCount === "-0") selectedCount = 0;
 
     if (selectedCount <= 0) {
       setAddedToBasket(false);
